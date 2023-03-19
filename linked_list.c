@@ -8,6 +8,7 @@
 
 // Including libraries
 #include <stdio.h>
+#include <stdlib.h>
 
 struct node {
 	int value;
@@ -45,4 +46,10 @@ int main(int argc, char **argv)
 	printf(" \a Linked list test!!! \n");
 
 	return 0;
+}
+
+node_t *create_node(int value)
+{
+	node_t *tmp = malloc(sizeof(node_t));
+	return tmp;
 }
